@@ -4,10 +4,7 @@ import Menu from './Menu';
 import Reservation from './Reservation';
 
 function Main() {
-
-
-
-
+    
     return (
         <section className="main-section">
 
