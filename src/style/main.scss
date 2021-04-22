@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
-@import 'setup.less';
-@import 'variables.less';
-@import 'animation.less';
-@import 'header.less';
+@import 'setup.scss';
+@import 'variables.scss';
+@import 'animation.scss';
+@import 'header.scss';
 @import 'react-calendar/dist/Calendar.css';
 
 body {
     overflow-x: hidden;
     overflow-y: hidden;
     font-family: 'Roboto Slab', serif;
-    color: @white;
+    color: $white;
     width: 100vw;
     height: 100vh;
 }
@@ -32,7 +32,7 @@ header {
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     width: 100%;
     height: 100px;
 
@@ -60,9 +60,9 @@ header {
         display: flex;
         justify-content: center;
         opacity: 0.8;
-        background-color: @dark-brown;
-        border: 2px solid @brown;
-        font-size: @small;
+        background-color: $dark-brown;
+        border: 2px solid $brown;
+        font-size: $small;
         margin: 20px 0;
         padding: 15px;
     }
@@ -140,7 +140,7 @@ main {
         right: 10px;
         justify-content: center;
         align-items: center;
-        font-size: @medium;
+        font-size: $medium;
         border: 2px solid black;
         width: 30px;
         height: 30px;
@@ -171,12 +171,12 @@ main {
 
     h2 {
         margin-top: 50px;
-        font-size: @small;
+        font-size: $small;
         font-family: 'Noto Sans', sans-serif;
     }
 
     h3, p {
-        font-size: @x-small;
+        font-size: $x-small;
     }
 
     p {
@@ -244,7 +244,7 @@ main {
 
           &:hover {
               cursor: pointer;
-              background-color: @brown;
+              background-color: $brown;
               color: white;
             }
         }
@@ -259,7 +259,7 @@ main {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 400px;
+      height: 340px;
       padding: 5px 50px;
       border-top: 2px solid black;
       border-bottom: 2px solid black;
@@ -276,16 +276,15 @@ main {
 
         ul {
           display: flex;
-          margin-bottom: 20px;
 
           li {
             border: 2px solid black;
             padding: 10px;
-            margin: 10px;
+            margin: 5px 10px;
 
             &:hover {
               cursor: pointer;
-              background-color: @brown;
+              background-color: $brown;
               color: white;
             }
           }
@@ -305,7 +304,7 @@ main {
 
 //calendar styling
 .react-calendar {
-  width: 300px;
+  width: 350px;
 }
 
 .react-calendar--doubleView {
