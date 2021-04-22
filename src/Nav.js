@@ -12,7 +12,6 @@ function Nav() {
         reservation.style.right = '0';
     }
 
-
     return (
         <ul className="side-nav">
             <li onClick={handleClickMenu}>MENU</li>
