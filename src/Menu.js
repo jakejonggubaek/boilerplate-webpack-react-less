@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './images/sachal-sub.png';
+import Logo from './images/sachal.png';
 
 function Menu() {
 
