@@ -6,7 +6,6 @@ function Menu() {
     const handleClick = () => {
         const menu = document.querySelector('.menu-container');
         menu.style.right = '-3000px';
-
     }
 
     return (
